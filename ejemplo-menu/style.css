@@ -1,0 +1,41 @@
+/*{
+    margin: 0;
+    padding: 0;
+}
+
+*/
+body{
+    background: rgb(245, 245, 205);
+}
+
+.Menu{
+    list-style: none;
+    background: rgb(235, 85, 34);
+    padding: 15px;
+    max-width: auto;
+    margin: auto;
+    
+}
+
+.Menu li{
+    display: inline-block;
+    padding: 50px 70px;
+    
+   
+}
+
+.Menu li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+    
+    
+}
+
+.Menu li a:hover{
+    text-decoration: none;
+    color: rgb(20, 22, 24);
+    background: rgb(248, 145, 48);
+    border-bottom: 2px solid rgb(15, 15, 13);
+
+}

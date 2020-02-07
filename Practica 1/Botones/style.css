@@ -1,0 +1,33 @@
+
+.boton {
+    font-size: 16px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 10px;
+    border: 1px solid #000000;
+    color:darkslategray;
+    background: #c3c3c3;
+    margin: 10px;
+    }
+    
+.boton:hover {
+    border: 0px;
+    opacity: 0.7;
+    }    
+.boton.azul{
+    background: #3498db;
+    }
+.boton.rojo{
+    background: #e74c3c;
+    }
+.boton.verde{
+    background: #1abc9c;
+}   
+.boton.mediano {
+    font-size: 18px;
+    }    
+.boton.redondo {
+    border-radius: 30%;
+    }
+        
+
