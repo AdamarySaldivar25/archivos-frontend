@@ -1,56 +1,61 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pagina 1</title>
-    <link rel="stylesheet" href="JC/css/bootstrap-grid.min.css">
+    <title>Front-End</title>
+    <link rel="stylesheet" href="JC/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top mb-5 shadow">
-        <div class="container">
-          <a class="navbar-brand" href="#">Start Bootstrap</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home
-                      <span class="sr-only">(current)</span>
-                    </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- Page Content -->
-      <div class="container">
-        <div class="card border-0 shadow my-5">
-          <div class="card-body p-5">
-            <div class="container">
-                <h1>Pagina 1</h1>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top mb-5 shadow">
+    <div class="container">
+      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page Content -->
+  <div class="container">
+    <div class="card border-0 shadow my-5">
+      <div class="card-body p-5">
+        
+        <h1 class="font-weight-light">Página 1</h1>
+
+        <nav id="menu">
+            <ul>
+              <h1>Texto con diferentes estilos de letra</h1>
                 <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </b>
                 <p><i>Vitae vel alias explicabo blanditiis perspiciatis natus cumque qui accusamus itaque fugiat sequi,</i></p>
                 <p>tenetur totam corrupti odit culpa! Nobis odio nesciunt temporibus.</p>
-                <img src="img/paisaje.jpg" width="500" height="300">
-                <h2>Tabla</h2>
+                <img src="img/paisaje.jpg" class="img-fluid" alt="Responsive image" >
+                <br></br>
+                <h2>Tabla Sencilla</h2>
                 <table>
                     <tr>
-                        <td><b>Nombre</b></td>
-                        <td><b>Apellido</b></td>
+                        <td><b>Nombre </b></td>
+                        <td><b>Apellido </b></td>
                         <td><b>Telefono</b></td>
                     </tr>
                     <tr>
@@ -61,23 +66,55 @@
                 </table>
                 <br>
                 <h2>Lista</h2>
-                <ul>
-                    <li>Primer Renglon</li>
-                    <li>Segundo Renglon</li>
-                    <li>Tercer Renglon</li>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Primer Renglon</li>
+                  <li class="list-group-item">Segundo Renglon</li>
+                  <li class="list-group-item">Tercer Renglon</li>
+                  <li class="list-group-item">Cuarto Renglon</li>
+                  <li class="list-group-item">Quinto Renglon</li>
                 </ul>
                 <h2>Datos Generales</h2>
-                <td><b>Correo Electronico</b></td>
-                <td><b> Numero Telefonico</b></td>
-
-                <a href="mailto: adamaryyy@gmail.com"><td>adamaryyy@gmail.com</td></a>
-                <a href="tel: 1548652">1548652</a>
-
-          <div style="height: 700px"></div>
-          <p class="lead mb-0">You've reached the end!</p>
-          </div>
-        </div>
-      </div> 
-
+                <table class="table table-hover">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Nombre</th>
+                      <th scope="col">Apellido</th>
+                      <th scope="col">Teléfono</th>
+                      <th scope="col">Correo Electrónico</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Adamary</td>
+                      <td>Saldívar</td>
+                      <td>63463424</td>
+                      <td>adamaryyy@gmail</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Carolina</td>
+                      <td>Sauceda </td>
+                      <td>3262342</td>
+                      <td>carito@gmail.com</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Hector</td>>
+                      <td colspan="2">Zamora</td>
+                      <td>hector@gmail.com</td>
+                    </tr>
+                  </tbody>
+                </table>
+            
+            </ul>
+          </nav>
+    
+      <div style="height: 700px"></div>
+      <p class="lead mb-0">You've reached the end!</p>
+      </div>
+    </div>
+  </div>  
 </body>
 </html>
