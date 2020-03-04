@@ -4,13 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplos Bootstrap</title>
-
-    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="JC/css/bootstrap.min.css">    
 </head>
 <body>
-    <h1>Ejemplo Bootstrap</h1>
-    <a href="b1.html">Ejemplo 1</a>
-    <a href="b2.html">Ejemplo 2</a>
-    <a href="curriculum/index.html">Curriculum</a>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top mb-5 shadow">
+        <div class="container">
+          <a class="navbar-brand" href="#">Start Bootstrap</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home
+                      <span class="sr-only">(current)</span>
+                    </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Page Content -->
+      <div class="container">
+        <div class="card border-0 shadow my-5">
+          <div class="card-body p-5">
+
+            <h1 class="font-weight-light">Ejemplo de Bootstrap</h1>
+    
+            <nav id="menu">
+                <ul>
+                  <li>
+                    <button type="button" class="btn btn-outline-success">
+                        <a href="b1.html">Ejemplo 1</a>
+                    </button>
+                  </li>
+                  <li> 
+                    <button type="button" class="btn btn-outline-danger">
+                        <a href="b2.html">Ejemplo 2</a>
+                    </button>
+                  </li>
+                  <li> 
+                    <button type="button" class="btn btn-outline-danger">
+                        <a href="curriculum/index.html">Curriculum</a>
+                    </button>
+                  </li>
+
+                </ul>
+              </nav>
+        
+          <div style="height: 100px"></div>
+          <p class="lead mb-0">You've reached the end!</p>
+          </div>
+        </div>
+      </div>  
 </body>
 </html>
