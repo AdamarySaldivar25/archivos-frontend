@@ -5,30 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript 2</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-
+    <link rel="stylesheet" href="/JavaScript/style.css">
 </head>
 <body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top mb-5 shadow">
     <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>JQuery</h1>
-                <input type="text"class="form-control" id="texto1"/>
-                    <button id="btn1" class="btn btn-primary">Aceptar</button>
-          </div>
-        </div>
+      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-      
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  </nav>
+  <!-- Page Content -->
+  <div class="container">
+    <div class="card border-0 shadow my-5">
+      <div class="card-body p-5">
+        <h1 class="font-weight-light">JQuery</h1>
 
-    <script>
-        jQuery(document).ready(function() {
-            $("#btn1").click(function() {
-               let valor = $("#texto1").val();
-               $("#texto1").val("");
-               alert(valor);
-            });
-        });
-    </script>
+        <nav id="menu">
+            <ul>
+                <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                            <input type="text"class="form-control" id="texto1"/>
+                                <br><button id="btn1" class="btn btn-primary" >Aceptar</button>
+                      </div>
+                    </div>
+                </div>
+                  
+                <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+            
+                <script>
+                    jQuery(document).ready(function() {
+                        $("#btn1").click(function() {
+                           let valor = $("#texto1").val();
+                           $("#texto1").val("");
+                           alert(valor);
+                        });
+                    });
+                </script>
+
+            </ul>
+          </nav>
+      
+    
+      <div style="height: 100px"></div>
+      <p class="lead mb-0">You've reached the end!</p>
+      </div>
+    </div>
+  </div>  
+
+
 </body>
 </html>
