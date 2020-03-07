@@ -1,5 +1,5 @@
 body {
-    background:url(https://images.unsplash.com/photo-1573811018466-b9d9f5322a16?ixlib=rb-1.2.1&auto=format&fit=crop&w=1019&q=80) no-repeat center center fixed;
+    background:url(https://images.unsplash.com/photo-1583265651681-1655318bd349?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -22,6 +22,6 @@ body {
     
   }
     #menu a:hover {
-      color: #000;
+      color: rgb(173, 171, 171);
       
     }
