@@ -22,8 +22,12 @@
                 <form >
                     <div class="form-row">
                         <div class="col-md-12 mb-2">
-                            <input type="text" class="form-control" id="resultado" />
-
+                            <input type="text" class="form-control" id="resultado"/>
+                        </div>
+                    </div>
+                    <div class="form-row mb-1">
+                        <div class="col-md-12">
+                            <button class="btn btn-secondary btn-block" id="btn-div">/</button>
                         </div>
                     </div>
                     <div class="form-row mb-1" >
@@ -94,13 +98,8 @@
 
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"
-    ></script>
-    <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 
     <script>
         jQuery(document).ready(function(){
@@ -189,7 +188,13 @@
                 operacion = 3;
                 $("#resultado").val("");
             });
-
+            $("#btn-div").click(function(event){
+                event.preventDefault();
+                let valor = $("#resultado").val();
+                numero= parseFloat(valor);
+                operacion = 4;
+                $("#resultado").val("");
+            });
 
             
             $("#btn-igual").click(function(event){
@@ -198,14 +203,12 @@
                 let res=0;
                 switch(operacion)
                 {
-                    case 1:
-                    
+                    case 1:  
                       res = numero + parseFloat(valor);
                      $("#resultado").val(res);
                     break;
                     
                     case 2:
-
                          res = numero - parseFloat(valor);
                         $("#resultado").val(res);
                     break;
@@ -213,6 +216,11 @@
                     case 3:
                         res = numero * parseFloat(valor);
                         $("#resultado").val(res);
+                    break;
+
+                    case 4:
+                    res = numero / parseFloat(valor);
+                    $("#resultado").val(res);
                     break;
                 } 
             });
