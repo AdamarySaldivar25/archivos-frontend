@@ -10,221 +10,270 @@
     />
 </head>
 <body>
+       <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top mb-5 shadow">
     <div class="container">
-        <div class="row">
-            <div class="col-md-5" align="center">
-                <h1>CALCULADORA</h1>
-            
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-5">
-                <form >
-                    <div class="form-row">
-                        <div class="col-md-12 mb-2">
-                            <input type="text" class="form-control" id="resultado"/>
-                        </div>
-                    </div>
-                    <div class="form-row mb-1">
-                        <div class="col-md-12">
-                            <button class="btn btn-secondary btn-block" id="btn-div">/</button>
-                        </div>
-                    </div>
-                    <div class="form-row mb-1" >
-                        <div class="col-md-3 ">
-                            <button class="btn btn-dark btn-block"  id="btn-7">7</button>
-                        </div>
-                        <div class="col-md-3 ">
-                            <button class="btn btn-dark btn-block" id="btn-8">8</button>
-                        </div>
-                        <div class="col-md-3 ">
-                            <button class="btn btn-dark btn-block" id="btn-9">9</button>
-                        </div>
-                        <div class="col-md-3 ">
-                            <button class="btn btn-secondary btn-block" id="btn-mult">x</button>
-                        </div>
-                       
-                    </div>
-                    <!-- form row-->
-                    <div class="form-row mb-1">
-                        <div class="col-md-3 ">
-                            <button class="btn btn-dark btn-block" id="btn-4">4</button>
-                        </div>
-                        <div class="col-md-3 ">
-                            <button class="btn btn-dark btn-block" id="btn-5">5</button>
-                        </div>
-                        <div class="col-md-3 ">
-                            <button class="btn btn-dark btn-block" id="btn-6">6</button>
-                        </div>
-                        <div class="col-md-3 ">
-                            <button class="btn btn-secondary btn-block" id="btn-resta">-</button>
-                        </div>
-                        
-                    </div>
-                    <!-- form row-->
-                    <div class="form-row mb-1">
-                        <div class="col-md-3 ">
-                            <button class="btn btn-dark  btn-block" id="btn-1">1</button>
-                        </div>
-                        <div class="col-md-3 ">
-                            <button class="btn btn-dark btn-block" id="btn-2">2</button>
-                        </div>
-                        <div class="col-md-3 ">
-                            <button class="btn btn-dark btn-block" id="btn-3">3</button>
-                        </div>
-                        <div class="col-md-3 ">
-                            <button class="btn btn-secondary btn-block" id="btn-suma">+</button>
-                        </div>
-                    </div>
-                    <!-- form row-->
-                    <div class="form-row mb-1">
-                        <div class="col-md-3 ">
-                            <button class="btn btn-dark  btn-block" id="btn-0">0</button>
-                        </div>
-                        <div class="col-md-3 ">
-                            <button class="btn btn-dark btn-block" id="btn-punto">.</button>
-                        </div>
-                        <div class="col-md-3 ">
-                            <button class="btn btn-danger btn-block" id="btn-c">C</button>
-                        </div>
-                        <div class="col-md-3 ">
-                            <button class="btn btn-secondary btn-block" id="btn-igual">=</button>
-                        </div>
-                    </div>
-                    <!-- form row-->
-                </form>
-            </div>
+      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://relaxed-tereshkova-f8ac24.netlify.com">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <div class="card border-0 shadow my-5">
+      <div class="card-body p-5">
+        <div class="container">
+            <blockquote class="blockquote text-center">
+                <h1><p class="mb-0">CALCULADORA</p></h1>
+              </blockquote> 
         </div>
 
+        <nav id="menu">
+            <ul>
+    <div class="row">
+        <div class="col-md-5">
+            <form >
+                <div class="form-row">
+                    <div class="col-md-12 mb-2">
+                        <input type="text" class="form-control" id="resultado"/>
+                    </div>
+                </div>
+                <div class="form-row mb-1">
+                   
+                    <div class="col-md-12">
+                        <button class="btn btn-secondary btn-block" id="btn-div">/</button>
+                    </div>
+                </div>
+                <div class="form-row mb-1" >
+                    <div class="col-md-3 ">
+                        <button class="btn btn-dark btn-block"  id="btn-7">7</button>
+                    </div>
+                    <div class="col-md-3 ">
+                        <button class="btn btn-dark btn-block" id="btn-8">8</button>
+                    </div>
+                    <div class="col-md-3 ">
+                        <button class="btn btn-dark btn-block" id="btn-9">9</button>
+                    </div>
+                    <div class="col-md-3 ">
+                        <button class="btn btn-secondary btn-block" id="btn-mult">x</button>
+                    </div>
+                   
+                </div>
+                <!-- form row-->
+                <div class="form-row mb-1">
+                    <div class="col-md-3 ">
+                        <button class="btn btn-dark btn-block" id="btn-4">4</button>
+                    </div>
+                    <div class="col-md-3 ">
+                        <button class="btn btn-dark btn-block" id="btn-5">5</button>
+                    </div>
+                    <div class="col-md-3 ">
+                        <button class="btn btn-dark btn-block" id="btn-6">6</button>
+                    </div>
+                    <div class="col-md-3 ">
+                        <button class="btn btn-secondary btn-block" id="btn-resta">-</button>
+                    </div>
+                    
+                </div>
+                <!-- form row-->
+                <div class="form-row mb-1">
+                    <div class="col-md-3 ">
+                        <button class="btn btn-dark  btn-block" id="btn-1">1</button>
+                    </div>
+                    <div class="col-md-3 ">
+                        <button class="btn btn-dark btn-block" id="btn-2">2</button>
+                    </div>
+                    <div class="col-md-3 ">
+                        <button class="btn btn-dark btn-block" id="btn-3">3</button>
+                    </div>
+                    <div class="col-md-3 ">
+                        <button class="btn btn-secondary btn-block" id="btn-suma">+</button>
+                    </div>
+                </div>
+                <!-- form row-->
+                <div class="form-row mb-1">
+                    <div class="col-md-3 ">
+                        <button class="btn btn-dark  btn-block" id="btn-0">0</button>
+                    </div>
+                    <div class="col-md-3 ">
+                        <button class="btn btn-dark btn-block" id="btn-punto">.</button>
+                    </div>
+                    <div class="col-md-3 ">
+                        <button class="btn btn-danger btn-block" id="btn-c">C</button>
+                    </div>
+                    <div class="col-md-3 ">
+                        <button class="btn btn-secondary btn-block" id="btn-igual">=</button>
+                    </div>
+                </div>
+                <!-- form row-->
+            </form>
+        </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+</div>
 
-    <script>
-        jQuery(document).ready(function(){
-            var numero = 0;
-            var operacion = 0;
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    jQuery(document).ready(function(){
+        var numero = 0;
+        var operacion = 0;
 
 
-            $("#btn-c").click(function(event){
-                event.preventDefault();
-                $("#resultado").val("");
-            });
-            $("#btn-0").click(function(event){
-                event.preventDefault();
-                let valor = $("#resultado").val();
-                $("#resultado").val(valor + "0");
-            });
-            $("#btn-1").click(function(event){
-                event.preventDefault();
-                let valor = $("#resultado").val();
-                $("#resultado").val(valor + "1");
-            });
-            $("#btn-2").click(function(event){
-                event.preventDefault();
-                let valor = $("#resultado").val();
-                $("#resultado").val(valor + "2");
-            });
-            $("#btn-3").click(function(event){
-                event.preventDefault();
-                let valor = $("#resultado").val();
-                $("#resultado").val(valor + "3");
-            });
-            $("#btn-4").click(function(event){
-                event.preventDefault();
-                let valor = $("#resultado").val();
-                $("#resultado").val(valor + "4");
-            });
-            $("#btn-5").click(function(event){
-                event.preventDefault();
-                let valor = $("#resultado").val();
-                $("#resultado").val(valor + "5");
-            });
-            $("#btn-6").click(function(event){
-                event.preventDefault();
-                let valor = $("#resultado").val();
-                $("#resultado").val(valor + "6");
-            });
-            $("#btn-7").click(function(event){
-                event.preventDefault();
-                let valor = $("#resultado").val();
-                $("#resultado").val(valor + "7");
-            });
-            $("#btn-8").click(function(event){
-                event.preventDefault();
-                let valor = $("#resultado").val();
-                $("#resultado").val(valor + "8");
-            });
-            $("#btn-9").click(function(event){
-                event.preventDefault();
-                let valor = $("#resultado").val();
-                $("#resultado").val(valor + "9");
-            });
-            $("#btn-punto").click(function(event){
-                event.preventDefault();
-                let valor = $("#resultado").val();
-                $("#resultado").val(valor + ".");
-            });
-            
-            $("#btn-suma").click(function(event){
-                event.preventDefault();
-                let valor = $("#resultado").val();
-                numero= parseFloat(valor);
-                operacion = 1;
-                $("#resultado").val("");
-            });
-            $("#btn-resta").click(function(event){
-                event.preventDefault();
-                let valor = $("#resultado").val();
-                numero= parseFloat(valor);
-                operacion = 2;
-                $("#resultado").val("");
-            });
-            $("#btn-mult").click(function(event){
-                event.preventDefault();
-                let valor = $("#resultado").val();
-                numero= parseFloat(valor);
-                operacion = 3;
-                $("#resultado").val("");
-            });
-            $("#btn-div").click(function(event){
-                event.preventDefault();
-                let valor = $("#resultado").val();
-                numero= parseFloat(valor);
-                operacion = 4;
-                $("#resultado").val("");
-            });
-
-            
-            $("#btn-igual").click(function(event){
-                event.preventDefault();
-                let valor = $("#resultado").val();
-                let res=0;
-                switch(operacion)
-                {
-                    case 1:  
-                      res = numero + parseFloat(valor);
-                     $("#resultado").val(res);
-                    break;
-                    
-                    case 2:
-                         res = numero - parseFloat(valor);
-                        $("#resultado").val(res);
-                    break;
-
-                    case 3:
-                        res = numero * parseFloat(valor);
-                        $("#resultado").val(res);
-                    break;
-
-                    case 4:
-                    res = numero / parseFloat(valor);
-                    $("#resultado").val(res);
-                    break;
-                } 
-            });
+        $("#btn-c").click(function(event){
+            event.preventDefault();
+            $("#resultado").val("");
         });
-    </script>
+        $("#btn-0").click(function(event){
+            event.preventDefault();
+            let valor = $("#resultado").val();
+            $("#resultado").val(valor + "0");
+        });
+        $("#btn-1").click(function(event){
+            event.preventDefault();
+            let valor = $("#resultado").val();
+            $("#resultado").val(valor + "1");
+        });
+        $("#btn-2").click(function(event){
+            event.preventDefault();
+            let valor = $("#resultado").val();
+            $("#resultado").val(valor + "2");
+        });
+        $("#btn-3").click(function(event){
+            event.preventDefault();
+            let valor = $("#resultado").val();
+            $("#resultado").val(valor + "3");
+        });
+        $("#btn-4").click(function(event){
+            event.preventDefault();
+            let valor = $("#resultado").val();
+            $("#resultado").val(valor + "4");
+        });
+        $("#btn-5").click(function(event){
+            event.preventDefault();
+            let valor = $("#resultado").val();
+            $("#resultado").val(valor + "5");
+        });
+        $("#btn-6").click(function(event){
+            event.preventDefault();
+            let valor = $("#resultado").val();
+            $("#resultado").val(valor + "6");
+        });
+        $("#btn-7").click(function(event){
+            event.preventDefault();
+            let valor = $("#resultado").val();
+            $("#resultado").val(valor + "7");
+        });
+        $("#btn-8").click(function(event){
+            event.preventDefault();
+            let valor = $("#resultado").val();
+            $("#resultado").val(valor + "8");
+        });
+        $("#btn-9").click(function(event){
+            event.preventDefault();
+            let valor = $("#resultado").val();
+            $("#resultado").val(valor + "9");
+        });
+        $("#btn-punto").click(function(event){
+            event.preventDefault();
+            let valor = $("#resultado").val();
+            $("#resultado").val(valor + ".");
+        });
+        
+        $("#btn-suma").click(function(event){
+            event.preventDefault();
+            let valor = $("#resultado").val();
+            numero= parseFloat(valor);
+            operacion = 1;
+            $("#resultado").val("");
+        });
+        $("#btn-resta").click(function(event){
+            event.preventDefault();
+            let valor = $("#resultado").val();
+            numero= parseFloat(valor);
+            operacion = 2;
+            $("#resultado").val("");
+        });
+        $("#btn-mult").click(function(event){
+            event.preventDefault();
+            let valor = $("#resultado").val();
+            numero= parseFloat(valor);
+            operacion = 3;
+            $("#resultado").val("");
+        });
+        $("#btn-div").click(function(event){
+            event.preventDefault();
+            let valor = $("#resultado").val();
+            numero= parseFloat(valor);
+            operacion = 4;
+            $("#resultado").val("");
+        });
+
+        
+        $("#btn-igual").click(function(event){
+            event.preventDefault();
+            let valor = $("#resultado").val();
+            let res=0;
+            switch(operacion)
+            {
+                case 1:  
+                  res = numero + parseFloat(valor);
+                 $("#resultado").val(res);
+                break;
+                
+                case 2:
+                     res = numero - parseFloat(valor);
+                    $("#resultado").val(res);
+                break;
+
+                case 3:
+                    res = numero * parseFloat(valor);
+                    $("#resultado").val(res);
+                break;
+
+                case 4:
+                res = numero / parseFloat(valor);
+                $("#resultado").val(res);
+                break;
+            } 
+        });
+    });
+</script>
+
+            </ul>
+          </nav>
+    
+    
+      <div style="height: 100px"></div>
+      <p class="lead mb-0">You've reached the end!</p>
+      </div>
+    </div>
+  </div>  
+
+
+
+
+
 </body>
 </html>
