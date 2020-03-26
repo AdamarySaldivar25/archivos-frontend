@@ -7,11 +7,53 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
 </head>
 <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top mb-5 shadow">
+        <div class="container">
+          <a class="navbar-brand" href="#">Start Bootstrap</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="https://relaxed-tereshkova-f8ac24.netlify.com">Home
+                      <span class="sr-only">(current)</span>
+                    </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="card border-0 shadow my-5">
+          <div class="card-body p-5">
+            <div class="container">
+                <blockquote class="blockquote text-center">
+                    <h1><p class="mb-0">Peliculas</p></h1>
+                  </blockquote> 
+            </div>    
+
+<nav id="menu">
+    <ul>
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <h1>Peliculas</h1>
-                <input type="text" name="pelicula" id="pelicula"/>
+            <div class="form-row">
+                <div class="col-md-12 mb-2">
+                    <input type="text" name="pelicula" id="pelicula"/><br>
+                </div>
+            </div>
+            <div class="col-md-12 mb-2">
                 <button id="buscar" class="btn btn-warning">Buscar</button>
             </div>
         </div>
@@ -55,6 +97,16 @@
             });
         });
     </script>
+            
+                </ul>
+              </nav>
+        
+          <div style="height: 100px"></div>
+          <p class="lead mb-0">You've reached the end!</p>
+          </div>
+        </div>
+      </div>  
+
 
 </body>
 </html> 
