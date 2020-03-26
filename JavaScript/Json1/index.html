@@ -4,10 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JSON</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
     
 </head>
 <body>
-    <h2 id="nombre"></h2>
+
+        <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top mb-5 shadow">
+    <div class="container">
+      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://relaxed-tereshkova-f8ac24.netlify.com">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="card border-0 shadow my-5">
+      <div class="card-body p-5">
+        <div class="container">
+            <blockquote class="blockquote text-center">
+                <h1><p class="mb-0">Botones con JavaScript</p></h1>
+              </blockquote> 
+        </div>
+        <h1 class="font-weight-light">Presiona cualquier botón!</h1>
+
+        <nav id="menu">
+            <ul>
+                <h2 id="nombre"></h2>
     <button id="boton1" class="btn btn-warning">Nombre 1</button>
     <button id="boton2" class="btn btn-warning">Nombre 2</button>
     <button id="boton3" class="btn btn-warning">Nombre 3</button>
@@ -19,9 +64,9 @@
     jQuery(document).ready(function() {
         var text = 
             '{ "empleados" : [' + 
-            '{ "nombre":"Alondra" , "apellido":"Salsazar" },' +
-            '{ "nombre":"Adamary" , "apellido":"Saldivar" },' +
-            '{ "nombre":"Ariana" , "apellido":"Grande" } ]}';
+            '{ "nombre":"Adamary" , "apellido":"Saldívar" },' +
+            '{ "nombre":"Alondra" , "apellido":"Salazar" },' +
+            '{ "nombre":"Alvaro" , "apellido":"Colunga" } ]}';
     
         var obj = JSON.parse(text);
             $("#boton1").click(function(){
@@ -35,5 +80,15 @@
         });
     });
 </script>
+    
+            </ul>
+          </nav>
+
+      <div style="height: 100px"></div>
+      <p class="lead mb-0">You've reached the end!</p>
+      </div>
+    </div>
+  </div>  
+    
 </body>
 </html>
