@@ -88,7 +88,8 @@
                              imdb = data.Search[num].imdbID;
                              poster = data.Search[num].Poster;
                             
-                            resultado = "<div class=\"card\" style=\"width: 18rem;\"><img src=\""+ poster +"\" class=\"card-img-top\" alt=\"...\"><div class=\"card-body\"><h5 class=\"card-title\">"+ 
+                            resultado = "<div class=\"card\" style=\"width: 18rem;\"><img src=\""+
+                             poster +"\" class=\"card-img-top\" alt=\"...\"><div class=\"card-body\"><h5 class=\"card-title\">"+ 
                             titulo +"</h5><p class=\"card-text\">Año: "+
                             year +".</p><p class=\"card-text\"> IMDB: "+ imdb +"</p></div></div>";
                             $("#resultado").append(resultado);
