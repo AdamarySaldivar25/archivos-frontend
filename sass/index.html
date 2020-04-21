@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sass</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Noto+Serif|Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/archivos-frontend/JC/css/style.css">
+    <link rel="stylesheet" href="style.css"> <!--Este es del archivo SASS, NO LO CUENTES-->
+</head>
+<body>
+  <nav>
+      
+      <a class=" button-menu fuente3" onclick="accion()" style="vertical-align: middle"><span>Menú</span></a>
+        <a class="button fuente3 desaparece" href="https://relaxed-tereshkova-f8ac24.netlify.com">Home</a>
+        <a class="button fuente3 desaparece" href="#">About</a>
+        <a class="button fuente3 desaparece" href="#">Services</a>
+        <a class="button fuente3 desaparece" href="#">Contact</a>
+        
+  </nav>
+   
+      <div class="container">
+                    <h1><p class="fuente2" align= "center">PÁGINA WEB CON SASS</p></h1>
+                    <h2><p class=" fuente2" align="center">Autora: Adamary Saldívar</p></h2> 
+            </div>
+                <div class="col-md-6 fuente3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempora voluptas ut laudantium 
+                dolores officia nulla tempore, aspernatur earum,dolorem perferendis dolore eos soluta voluptate dicta! Omnis quidem cupiditate a.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis delectus eos alias ad architecto adipisci, dolorum assumenda rerum quas suscipit amet.
+                Facilis veritatis blanditiis placeat doloribus neque deleniti libero voluptas! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi dolorem iusto voluptas, veritatis ea inventore rem debitis voluptatem 
+                mollitia quas aspernatur repudiandae eligendi voluptatum ipsam libero earum quis dolore molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quo sint at? Dignissimos, dolorum aliquid! Obcaecati rerum,
+               repellendus quaerat illum aliquid facilis reprehenderit asperiores tenetur eaque suscipit, dolores, aperiam veritatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi pariatur fugit animi ipsam aliquam in vitae commodi eveniet, at quasi laudantium aliquid molestias consectetur totam iusto asperiores eos debitis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde explicabo exercitationem autem sapiente a quis, omnis, officia veniam quibusdam, quisquam est quos id officiis similique aut deleniti pariatur voluptates magni.
+              </div>
+
+<!--Funcion JS para la acción del boton menú-->
+    <script>
+        function accion(){
+           var ancla = document.getElementsByClassName('button');
+           for (var i = 0; i < ancla.length; i++){
+               ancla[i].classList.toggle('desaparece');
+           }
+
+        }
+
+    </script>
+
+</body>
+</html>

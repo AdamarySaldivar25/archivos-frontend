@@ -1,0 +1,33 @@
+@import "./body";
+@import "./boton";
+@import "./encabezado";
+
+//Parte responsiva
+@media (max-width: 600px){
+  nav{
+    background-image: linear-gradient(to bottom right,#9EA3B0,#E4C3AD);
+    flex-direction: column;
+    padding: 10px;
+  }
+  .button{
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+    
+  }
+  .button-menu{
+    padding: 10px 24px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    background-image: #E4C3AD;
+    color:black;
+    transition: all 0.5s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+  }
+  .desaparece{
+    display: none;
+  }
+}
